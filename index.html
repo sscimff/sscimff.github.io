@@ -36,6 +36,8 @@
         <!--bootstrap.min.css-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
+        <link rel="stylesheet" href="styles.css">
+
         <!-- bootsnav -->
         <link rel="stylesheet" href="assets/css/bootsnav.css">
 
@@ -277,14 +279,13 @@
                     <div class="portfolio-content">
                         <div class="isotope">
                             <div class="row">
-
                                 <div class="col-sm-4">
                                     <div class="item">
                                         <img
                                             src="assets/images/portfolio/p.png"
                                             alt="portfolio image" />
                                         <div class="isotope-overlay">
-                                            <a href="#">
+                                            <a href="#" data-project="GoRedis">
                                                 GoRedis
                                             </a>
                                         </div><!-- /.isotope-overlay -->
@@ -294,7 +295,7 @@
                                             src="assets/images/portfolio/p.png"
                                             alt="portfolio image" />
                                         <div class="isotope-overlay">
-                                            <a href="#">
+                                            <a href="#" data-project="GoRedis">
                                                 Automatic Correction Program and Style Detection System
                                             </a>
                                         </div><!-- /.isotope-overlay -->
@@ -307,7 +308,7 @@
                                             src="assets/images/portfolio/p.png"
                                             alt="portfolio image" />
                                         <div class="isotope-overlay">
-                                            <a href="#">
+                                            <a href="#" data-project="GoRedis">
                                                 A Continue Bubble Detection Mechanism for Cryptocurrencies
                                             </a>
                                         </div><!-- /.isotope-overlay -->
@@ -317,7 +318,7 @@
                                             src="assets/images/portfolio/p.png"
                                             alt="portfolio image" />
                                         <div class="isotope-overlay">
-                                            <a href="#">
+                                            <a href="#" data-project="GoRedis">
                                                 Sleep Lab - Unity Game
                                             </a>
                                         </div><!-- /.isotope-overlay -->
@@ -329,7 +330,7 @@
                                             src="assets/images/portfolio/p.png"
                                             alt="portfolio image" />
                                         <div class="isotope-overlay">
-                                            <a href="#">
+                                            <a href="#" data-project="GoRedis">
                                                 TO BE CONTINUED...
                                             </a>
                                         </div><!-- /.isotope-overlay -->
@@ -339,7 +340,7 @@
                                             src="assets/images/portfolio/p.png"
                                             alt="portfolio image" />
                                         <div class="isotope-overlay">
-                                            <a href="#">
+                                            <a href="#" data-project="GoRedis">
                                                 TO BE CONTINUED...
                                             </a>
                                         </div><!-- /.isotope-overlay -->
@@ -353,6 +354,15 @@
 
         </section><!--/.portfolio-->
         <!--portfolio end -->
+        <!-- Modal Structure start -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+        <!-- Modal Structure end -->
 
         
         <!--education start -->
@@ -506,8 +516,9 @@
         <script src="assets/js/jquery.appear.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
         <script src="assets/js/custom.js"></script>
+
+        <script src="script.js"></script>
 
 
     </body>
